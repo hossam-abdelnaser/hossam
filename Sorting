@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n, arr[1005], x = 0;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	for (int i = 0; i < n; i++) {     //0  1  2  3  4  5
+		int min_indx = arr[i];       //60 10 20 50 40 30 
+		for (int z = i + 1; z < n; z++) {
+			if (arr[z] < arr[i]) {
+				min_indx = arr[z];
+				x = arr[i];
+				arr[i] = arr[z];
+				arr[z] = x;
+			}
+
+		}
+		cout << arr[i]<<" ";
+	}
+	
+	return 0;
+}
