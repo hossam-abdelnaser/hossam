@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,m;
+    long long arr[55][55];
+    cin>>n>>m;
+     for (int r=0;r<n;r++){
+       for (int c=0;c<m;c++){
+        cin>>arr[r][c];
+       }                                        //n*m
+     }                                          //3*4
+                                               //       0 1 2 3
+                                               //     |---------
+      for (int r=0;r<m;r++) {                 //     0| 1 2 3 4
+      for (int c=(n-1);c>=0;c--){            //      1| 5 6 7 8
+                                            //       2| 9 10 11 12
+      cout<<  arr[c][r]<<" ";
+                                             // 9 5 1
+      }                                     //  10 6 2
+      cout<<'\n';                          //   11 7 3
+      }                                   //    12 8 4
+  	return 0;
+}
