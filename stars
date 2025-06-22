@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int lin,coun=1;
+    cin >> lin;
+    int space = lin-1;
+
+    for (int l = 1; l <= lin; l++) {
+        for (int sp = space; sp>=1; sp--)
+            cout << " ";
+        for (int st =  1 ; st<=coun ; st++)
+            cout << "*";
+        cout << '\n';
+        coun += 2;
+        space--;
+    }
+    return 0;
+}
