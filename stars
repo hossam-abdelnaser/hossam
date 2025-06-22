@@ -1,0 +1,29 @@
+Hendi is an Egyptian who did not visit the Giza Pyramids as most of the Egyptians :). So he decided to visit them next week. Since he can not contain his excitement he decided to practice drawing pyramids until he visits them. Given n lines help Hendi draw a pyramid.
+
+Input
+n 
+(
+1
+≤
+n
+≤
+200
+)
+(1≤n≤200)
+
+Examples
+Inputcopy	Outputcopy
+2
+ *
+***
+Inputcopy	Outputcopy
+3
+  *
+ ***
+*****
+Inputcopy	Outputcopy
+4
+   *
+  ***
+ *****
+*******
